@@ -1,0 +1,7 @@
+/.idea/
+/postgresql/db.sqlite3
+/postgresql/config/__init__.py
+/hello/config/__init__.py
+/hello/pages/migrations/
+/hello/pages/__init__.py
+/hello/__init__.py
