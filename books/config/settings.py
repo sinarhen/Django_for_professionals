@@ -38,7 +38,7 @@ INSTALLED_APPS = [
 
     # Local
     'accounts',
-    'pages',  # new
+    'pages',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [str(BASE_DIR.joinpath('templates'))],  # new
+        'DIRS': [str(BASE_DIR.joinpath('templates'))],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,3 +124,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Authentication custom settings
+LOGIN_REDIRECT_URL = 'home'  # new
+LOGOUT_REDIRECT_URL = 'home'  # new
