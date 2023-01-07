@@ -5,3 +5,9 @@
 /hello/pages/migrations/
 /hello/pages/__init__.py
 /hello/__init__.py
+/books/accounts/__init__.py
+/books/accounts/migrations/
+books/config/__init__.py
+/.gitignore
+/books/pages/migrations/
+/books/pages/__init__.py
