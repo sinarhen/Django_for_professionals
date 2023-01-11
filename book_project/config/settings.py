@@ -35,7 +35,7 @@ INSTALLED_APPS = [
     'crispy_forms',  # new
     'allauth',  # new
     'allauth.account',  # new
-    "allauth.socialaccount.providers.github",
+    "allauth.socialaccount",
 
     # Local
     'pages',
@@ -54,7 +54,7 @@ ACCOUNT_USERNAME_REQUIRED = False  # new
 ACCOUNT_AUTHENTICATION_METHOD = 'email'  # new
 ACCOUNT_EMAIL_REQUIRED = True  # new
 ACCOUNT_UNIQUE_EMAIL = True  # new
-
+DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'  # new
 
 MIDDLEWARE = [
